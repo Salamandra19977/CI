@@ -11,5 +11,3 @@ def get_random_number():
 
 
 
-
-
