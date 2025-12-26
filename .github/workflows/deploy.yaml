@@ -20,3 +20,6 @@ jobs:
         run: docker build -t salamandra1997/pythonapi:latest .
       - name: Push Docker image
         run: docker push salamandra1997/pythonapi:latest
+      - name: Trigger Render Deploy
+        run: |
+          curl -X POST https://api.render.com/deploy/srv-d52pq77gi27c73cohfqg?key=G6PLonsso3E
